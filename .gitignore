@@ -1,0 +1,12 @@
+# MacOS
+.DS_Store
+
+# Intellij
+.idea
+*.iml
+
+# Project
+target/
+src/resources/config.properties
+src/resources/local.properties
+
