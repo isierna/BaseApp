@@ -7,6 +7,7 @@ public class HomePageTests extends BaseTest{
     @Test
     public void firstTest() {
         HomePage homePage = new HomePage();
-        homePage.go();
+        homePage.goAnyLogin("1");
+
     }
 }

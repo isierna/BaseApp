@@ -8,11 +8,10 @@ public class PropertyReader {
     private PropertyReader() {
     } //Prevent the class from being constructed
 
-    public static String pathToConfigs = "src/resources/config.properties";
-
     public static String getProperty(String name) {
         try {
             Properties prop = new Properties();
+            String pathToConfigs = "src/resources/config.properties";
             prop.load(new FileInputStream(pathToConfigs));
             return prop.getProperty(name);
         } catch (IOException ex) {
